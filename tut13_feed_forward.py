@@ -47,7 +47,7 @@ for i in range(6):
 img_grid = torchvision.utils.make_grid(example_data)
 writer.add_image('mnist_images', img_grid)
 writer.close()
-sys.exit()
+
 # Fully connected neural network with one hidden layer
 class NeuralNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
